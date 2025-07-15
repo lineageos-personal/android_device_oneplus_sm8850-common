@@ -60,4 +60,11 @@
         <item>/apex/com.android.art/javalib/core-oj.jar</item>
         <item>/apex/com.android.art/javalib/core-libart.jar</item>
     </string-array>
+
+    <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+
+    <!-- Default value for fp screen off unlock toggle, it only works for the devices that support
+         fp screen off unlock-->
+    <bool name="config_screen_off_udfps_default_on">true</bool>
 </resources>
