@@ -490,3 +490,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8850-common/sm8850-common-vendor.mk)
+
+# DT2W
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/touchpanel.kl
