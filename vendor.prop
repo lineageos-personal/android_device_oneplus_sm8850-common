@@ -279,6 +279,10 @@ vendor.secureprocessor.service_start=1
 persist.vendor.sensors.debug.hal=0
 vendor.dynamic_sensor.setup.timeout.ms=1600
 
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # USB
 ro.usb.uvc.enabled=true
 sys.usb.mtp.batchcancel=1
