@@ -578,6 +578,7 @@ vendor/etc/media_codecs_canoe_v2.xml
 vendor/etc/media_codecs_canoe_v2_vendor.xml
 vendor/etc/media_codecs_canoe_v3.xml
 vendor/etc/media_codecs_canoe_v3_vendor.xml
+odm/etc/media_codecs_dolby_vision.xml:vendor/etc/media_codecs_dolby_vision.xml
 vendor/etc/media_codecs_performance_canoe_sku1.xml
 vendor/etc/media_codecs_performance_canoe_sku1_vendor.xml
 vendor/etc/media_codecs_performance_canoe_sku2.xml
