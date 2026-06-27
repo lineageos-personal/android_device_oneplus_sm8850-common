@@ -55,6 +55,9 @@ BOARD_RAMDISK_USE_LZ4 := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := canoe
 
+# Camera (Oplus camera port) - OEM camera sets vendor props outside the standard namespace.
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 # DTB / DTBO
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 ifeq ($(USE_PREBUILT_KERNEL), true)
