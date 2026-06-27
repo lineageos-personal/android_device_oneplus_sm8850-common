@@ -147,6 +147,18 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libpwirishalwrapper.so': blob_fixup()
         .replace_needed('android.hardware.graphics.composer3-V3-ndk.so', 'android.hardware.graphics.composer3-V4-ndk.so'),
     'vendor/lib64/libsdmcore.so': blob_fixup()
+        .binary_regex_replace(
+            b'/my_product/vendor/etc/display_apollo_list.xml',
+            b'/vendor/etc/oplus_disp/display_apollo_list.xml',
+        )
+        .binary_regex_replace(
+            b'/my_product/vendor/etc/display_apollo_list_',
+            b'/vendor/etc/oplus_disp/display_apollo_list_',
+        )
+        .binary_regex_replace(
+            b'/my_product/vendor/etc/',
+            b'/vendor/etc/oplus_disp/',
+        )
         .add_needed('libbase.so'),
     'vendor/usr/keylayout/gpio-keys.kl': blob_fixup()
         .add_line_if_missing('key 735   ASSIST'),
