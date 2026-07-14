@@ -314,6 +314,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_PVMFW_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# PlusKey
+PRODUCT_PACKAGES += \
+    PlusKey
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
